@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "payment-system"
+version = "1.0.0"
+description = "Polymorphism demo: a deeply packaged payment system with a tkinter GUI"
+requires-python = ">=3.8"
+dependencies = [
+    "ttkbootstrap>=1.10",
+    "rich>=13.0",
+    "qrcode>=7.4",
+    "Pillow>=10.0",
+    "reportlab>=4.0",
+]
+
+[project.scripts]
+payment-system = "payment_system.gui:run"
+
+[tool.setuptools.packages.find]
+include = ["payment_system*"]
