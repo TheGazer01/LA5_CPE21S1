@@ -18,7 +18,7 @@ from utils.receipt import make_receipt_pdf
 from utils.report import export_csv, show_chart
 from utils.console import log_payment, show_history
 
-BUSINESS_NAME = "My Business"
+BUSINESS_NAME = "Endfields Inc."
 BLUE = "#1a56db"
 
 history = []
